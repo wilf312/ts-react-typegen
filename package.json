@@ -1,6 +1,6 @@
 {
   "name": "ts-react-typegen",
-  "version": "0.9.10",
+  "version": "0.9.11",
   "description": "generate react component type JSON tool",
   "scripts": {
     "buildTest": "ts-node ./src/cli.ts  **/*.tsx test.json",
