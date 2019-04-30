@@ -1,0 +1,37 @@
+[
+    [
+        {
+            "description": "",
+            "displayName": "TextField",
+            "methods": [],
+            "props": {
+                "value": {
+                    "defaultValue": null,
+                    "description": "value description",
+                    "name": "value",
+                    "parent": {
+                        "fileName": "react-typegen-command/example/component/atom/TextField/TextField.tsx",
+                        "name": "IProps"
+                    },
+                    "required": true,
+                    "type": {
+                        "name": "string"
+                    }
+                },
+                "disabled": {
+                    "defaultValue": null,
+                    "description": "disabled description",
+                    "name": "disabled",
+                    "parent": {
+                        "fileName": "react-typegen-command/example/component/atom/TextField/TextField.tsx",
+                        "name": "IProps"
+                    },
+                    "required": true,
+                    "type": {
+                        "name": "boolean"
+                    }
+                }
+            }
+        }
+    ]
+]

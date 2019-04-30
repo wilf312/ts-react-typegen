@@ -17,7 +17,7 @@ export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
   const typeList = componentPathList.map(filePath => {
     const parsed = parser(filePath) // programProviderは内部で生成するので渡さない
     // console.log(filePath)
-    console.log(parsed[0].props)
+    // console.log(parsed[0].props)
     return parsed
   })
 
