@@ -1,1 +1,1 @@
-# react-typegen-command
+# ts-component-type
