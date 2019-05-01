@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import {parse} from 'react-docgen-typescript'
+import {parse, ComponentDoc} from 'react-docgen-typescript'
 import {getComponentPathList} from './lib'
 
 const parser = parse
@@ -14,11 +14,18 @@ export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
   // console.log(componentPathList)
 
   // parseを適応 
-  const typeList = componentPathList.map(filePath => {
-    let parsed = parser(filePath) // programProviderは内部で生成するので渡さない
-    // console.log(filePath)
-    // console.log(parsed[0].props)
-    parsed.filePath = filePath
+  interface IType extends ComponentDoc {
+    filePath: string
+  }
+  const typeList = parser(componentPathList).map((type: ComponentDoc, index: number) => {
+    let parsed: IType = {
+      displayName: type.displayName || '',
+      description: type.description || '',
+      props: type.props || {},
+      methods: type.methods || [],
+      filePath: componentPathList[index]
+    }
+    console.log(parsed)
     return parsed
   })
 
