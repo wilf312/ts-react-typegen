@@ -11,7 +11,7 @@ export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
 
   // component を取得
   const componentPathList = getComponentPathList(target)
-  console.log(componentPathList)
+  // console.log(componentPathList)
 
   // parseを適応 
   const typeList = componentPathList.map(filePath => {
@@ -22,5 +22,5 @@ export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
   })
 
   // console.log(typeList)
-  fs.writeFileSync(outputPath, JSON.stringify(typeList, undefined, 4));
+  fs.writeFileSync(outputPath, JSON.stringify(typeList, undefined, 2));
 }

@@ -8,8 +8,9 @@
     "tsc": "yarn clean && tsc",
     "clean": "rimraf ./dist/*"
   },
+  "main": "./bin.js",
   "bin": {
-    "tg": "./cli.js"
+    "tg": "./bin.js"
   },
   "repository": {
     "type": "git",
