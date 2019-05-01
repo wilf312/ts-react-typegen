@@ -1,6 +1,6 @@
 {
   "name": "ts-react-typegen",
-  "version": "0.9.16",
+  "version": "0.9.17",
   "description": "generate react component type JSON tool",
   "scripts": {
     "buildTest": "ts-node ./src/cli.ts  **/*.tsx test.json",
@@ -25,8 +25,8 @@
   "homepage": "https://github.com/wilf312/ts-react-typegen#readme",
   "dependencies": {
     "commander": "^2.20.0",
-    "react-docgen-typescript": "^1.12.4",
     "glob": "^7.1.3",
+    "react-docgen-typescript": "^1.12.4",
     "typescript": "^3.4.5"
   },
   "devDependencies": {
