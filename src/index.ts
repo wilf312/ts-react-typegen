@@ -4,7 +4,7 @@ import {getComponentPathList} from './lib'
 
 const parser = parse
 
-export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
+export const main = (target = 'src/', outputPath = './type.json') => {
 
   console.log('target %s', target)
   console.log('outputPath %s', outputPath)
@@ -25,7 +25,7 @@ export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
       methods: type.methods || [],
       filePath: componentPathList[index]
     }
-    console.log(parsed)
+    // console.log(parsed)
     return parsed
   })
 

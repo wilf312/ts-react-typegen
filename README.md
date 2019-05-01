@@ -13,6 +13,6 @@ npm install -g ts-react-typegen
 ### usage
 
 ```
-# tg path/to/your/components/**/*.tsx output.json
-tg [SEARCH_PATH_OR_FILES] [OUTPUT_JSON_PATH]
+# tg generate path/to/your/components/ output.json
+tg generate [SEARCH_PATH_OR_FILES] [OUTPUT_JSON_PATH]
 ```
