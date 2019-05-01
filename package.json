@@ -26,13 +26,13 @@
   "dependencies": {
     "commander": "^2.20.0",
     "react-docgen-typescript": "^1.12.4",
+    "glob": "^7.1.3",
     "typescript": "^3.4.5"
   },
   "devDependencies": {
     "@types/glob": "^7.1.1",
     "@types/node": "^11.13.8",
     "@types/react": "^16.8.15",
-    "glob": "^7.1.3",
     "react": "^16.8.6",
     "react-docgen": "^4.1.0",
     "rimraf": "^2.6.3",
