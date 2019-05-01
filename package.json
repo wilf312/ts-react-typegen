@@ -3,7 +3,7 @@
   "version": "0.10.2",
   "description": "generate react component type JSON tool",
   "scripts": {
-    "buildTest": "ts-node ./src/cli.ts  **/*.tsx test.json",
+    "buildTest": "ts-node ./src/cli.ts generate  . test.json",
     "test": "echo \"Error: no test specified\" && exit 0",
     "tsc": "yarn clean && tsc",
     "clean": "rimraf ./dist/*"
