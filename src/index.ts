@@ -15,12 +15,15 @@ export const main = (target = 'src/**/*.tsx', outputPath = './type.json') => {
 
   // parseを適応 
   const typeList = componentPathList.map(filePath => {
-    const parsed = parser(filePath) // programProviderは内部で生成するので渡さない
+    let parsed = parser(filePath) // programProviderは内部で生成するので渡さない
     // console.log(filePath)
     // console.log(parsed[0].props)
+    parsed.filePath = filePath
     return parsed
   })
 
   // console.log(typeList)
-  fs.writeFileSync(outputPath, JSON.stringify(typeList, undefined, 2));
+  fs.writeFileSync(outputPath, JSON.stringify(typeList, undefined, 2))
+
+  console.log(`✨ Generated! ${outputPath}`)
 }
