@@ -16,7 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/wilf312/ts-react-typegen.git"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript", "react", "ts", "cli"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
