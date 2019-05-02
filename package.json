@@ -1,6 +1,6 @@
 {
   "name": "ts-react-typegen",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "generate react component type JSON tool",
   "scripts": {
     "buildTest": "ts-node ./src/cli.ts generate  . test.json",
@@ -17,7 +17,10 @@
     "url": "git+https://github.com/wilf312/ts-react-typegen.git"
   },
   "keywords": [
-    "typescript", "react", "ts", "cli"
+    "typescript",
+    "react",
+    "ts",
+    "cli"
   ],
   "author": "",
   "license": "ISC",
